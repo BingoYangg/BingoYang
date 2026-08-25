@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🎱Bingo Yang Casino🎱</title>
+    <title>🎱Bingo Yang🎱</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <style>
@@ -21,18 +21,212 @@
         }
 
         /* Contenedor del modal */
-        .modal-container {
-            position: fixed;
-            top: 0;
-            left: 0;
-            height: 100vh;
-            width: 100vw;
-            background-color: rgb(0, 0, 0); /* fondo oscuro */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 9999;
-        }
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(0, 0, 0); /* Fondo oscuro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    overflow: hidden; /* Evitar que las bolas se salgan del modal */
+}
+
+/* Contenedor de bolas */
+.balls-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* No interactuar con las bolas */
+    z-index: -1; /* Asegura que las bolas queden detrás del contenido del modal */
+}
+
+/* Estilos para cada bola */
+.ball {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.8;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    border: 5px solid; /* Borde de la bola */
+    animation: moveBall 10s infinite linear;
+}
+
+/* Círculo interior blanco con el número */
+.ball-inner {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: black;
+    position: relative;
+}
+
+/* Estilo para la letra en la parte superior de la bola */
+.ball-letter {
+    position: absolute;
+    top: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+}
+
+/* Establecer el color del borde de las bolas */
+.ball:nth-child(1) {
+    border-color: pink;
+}
+
+.ball:nth-child(2) {
+    border-color: yellow;
+}
+
+.ball:nth-child(3) {
+    border-color: purple;
+}
+
+.ball:nth-child(4) {
+    border-color: orange;
+}
+
+.ball:nth-child(5) {
+    border-color: blue;
+}
+
+.ball:nth-child(6) {
+    border-color: green;
+}
+
+.ball:nth-child(7) {
+    border-color: red;
+}
+
+.ball:nth-child(8) {
+    border-color: lime;
+}
+
+.ball:nth-child(9) {
+    border-color: brown;
+}
+
+.ball:nth-child(10) {
+    border-color: violet;
+}
+
+.ball:nth-child(11) {
+    border-color: cyan;
+}
+
+.ball:nth-child(12) {
+    border-color: teal;
+}
+
+.ball:nth-child(13) {
+    border-color: coral;
+}
+
+.ball:nth-child(14) {
+    border-color: magenta;
+}
+
+.ball:nth-child(15) {
+    border-color: indigo;
+}
+
+.ball:nth-child(16) {
+    border-color: maroon;
+}
+
+.ball:nth-child(17) {
+    border-color: gold;
+}
+
+.ball:nth-child(18) {
+    border-color: olive;
+}
+
+.ball:nth-child(19) {
+    border-color: plum;
+}
+
+.ball:nth-child(20) {
+    border-color: salmon;
+}
+
+.ball:nth-child(21) {
+    border-color: limegreen;
+}
+
+.ball:nth-child(22) {
+    border-color: steelblue;
+}
+
+.ball:nth-child(23) {
+    border-color: darkorange;
+}
+
+.ball:nth-child(24) {
+    border-color: tomato;
+}
+
+.ball:nth-child(25) {
+    border-color: khaki;
+}
+
+.ball:nth-child(26) {
+    border-color: turquoise;
+}
+
+.ball:nth-child(27) {
+    border-color: lightseagreen;
+}
+
+.ball:nth-child(28) {
+    border-color: lightcoral;
+}
+
+.ball:nth-child(29) {
+    border-color: darkviolet;
+}
+
+.ball:nth-child(30) {
+    border-color: deeppink;
+}
+
+/* Animación para mover las bolas aleatoriamente */
+@keyframes moveBall {
+    0% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(80vw, -50vh);
+    }
+    50% {
+        transform: translate(-70vw, 60vh);
+    }
+    75% {
+        transform: translate(50vw, -30vh);
+    }
+    100% {
+        transform: translate(-50vw, 70vh);
+    }
+}
+
 
         /* Contenido del modal centrado */
         .modal-content {
@@ -256,19 +450,19 @@
         </div>
     </div>
     <div class="logo-container">
-        <img id="logo" src="images/logo.png" alt="Bingo Yang Casino Logo" />
+        <img id="logo" src="images/logoO.png" alt="Bingo Yang Casino Logo" />
     </div>
-    <h1>BINGO YANG CASINO🎱</h1>
+    <h1>🎱BINGO YANG🎱</h1>
     <div class="payment-info" id="payment-info">
         Datos de Pago Móvil Oficiales:<br>
-        🎱Bingo Yang Casino🎱<br>
+        🎱Bingo Yang🎱<br>
         Cédula:26483716<br>
         Banco:Banco de Venezuela (0102)<br>
         Teléfono:04129518554
     </div>
     <div class="whatsapp-link">
-        <a href="https://chat.whatsapp.com/DGSWs5emcuGDgRTPETIAoY" target="_blank" class="whatsapp-icon">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/2048px-WhatsApp.svg.png" alt="WhatsApp">
+        <a href="https://chat.whatsapp.com/IIkcJ6uJUmZ352RrNOnI9L?mode=ac_t" target="_blank" class="whatsapp-icon">
+            <img src="logotipo de WhatsApp png.png" alt="WhatsApp">
         </a>
         <p>Grupo de WhatsApp, Haz clic en el ícono</p>
         <button onclick="window.location.href='usuarios.html'">Usuarios</button>
@@ -366,16 +560,16 @@
     <div class="money-system" id="money-system-bingo-75">
         <label for="money-amount-bingo-75">BS:</label>
         <select id="money-amount-bingo-75" onchange="appFunctions.togglePaymentReference('bingo-75')">
-            <option value="30">30BS</option>
-            <option value="40">40BS</option>
-            <option value="50">50BS</option>
-            <option value="60">60BS</option>
-            <option value="70">70BS</option>
-            <option value="80">80BS</option>
-            <option value="90">90BS</option>
-            <option value="100">100BS</option>
-            <option value="110">110BS</option>
-            <option value="120">120BS</option>
+            <option value="30">500BS</option>
+            <option value="40">600BS</option>
+            <option value="50">700BS</option>
+            <option value="60">800BS</option>
+            <option value="70">900BS</option>
+            <option value="80">1000BS</option>
+            <option value="90">1200BS</option>
+            <option value="100">1300BS</option>
+            <option value="110">1400BS</option>
+            <option value="120">1500BS</option>
         </select>
         <span id="total-money-bingo-75" class="hidden-money" data-money="0">BS: ****</span>
     </div>
@@ -501,16 +695,16 @@
     <div class="money-system" id="money-system-bingo-90">
         <label for="money-amount-bingo-90">BS:</label>
         <select id="money-amount-bingo-90" onchange="appFunctions.togglePaymentReference('bingo-90')">
-            <option value="30">30BS</option>
-            <option value="40">40BS</option>
-            <option value="50">50BS</option>
-            <option value="60">60BS</option>
-            <option value="70">70BS</option>
-            <option value="80">80BS</option>
-            <option value="90">90BS</option>
-            <option value="100">100BS</option>
-            <option value="110">110BS</option>
-            <option value="120">120BS</option>
+            <option value="30">500BS</option>
+            <option value="40">600BS</option>
+            <option value="50">700BS</option>
+            <option value="60">800BS</option>
+            <option value="70">900BS</option>
+            <option value="80">1000BS</option>
+            <option value="90">1200BS</option>
+            <option value="100">1300BS</option>
+            <option value="110">1400BS</option>
+            <option value="120">1500BS</option>
         </select>
         <span id="total-money-bingo-90" class="hidden-money" data-money="0">BS: ****</span>
     </div>
@@ -655,7 +849,7 @@
         <div class="icon-container">
             <img src="images/juegogame.png" alt="Autoprohibición al Juego" class="icon">
         </div>
-        <p>&copy; Empresa Yang Diversión Casino, Extensión Bingo Yang Casino, Todos los derechos reservados.</p>
+        <p>&copy; Empresa Yang Diversión, Extensión Bingo Yang, Todos los derechos reservados.</p>
         <p>PROHIBIDO MENORES DE 🔞</p>
     </footer>
     <div id="total-cartons-sold">Total de cartones vendidos: 0</div>
@@ -664,83 +858,117 @@
         <button class="tui-image-editor-download-btn">Descargar</button>
     </div>
     <div id="accesoModal" class="modal-container">
+        <div class="modal-container">
+            <div class="balls-container"></div>
         <div class="modal-content">
             <h2>Ingresa el código de acceso</h2>
             <input type="password" id="codigo-acceso" placeholder="Código de acceso">
-            <button id="boton-enviar-codigo">Enviar</button>
+            <button id="boton-enviar-codigo">Aceptar</button>
             <p id="mensaje-error" style="color: red; display: none;">Código incorrecto</p>
         </div>
     </div>
     <script type="module" src="app.js"></script>
-    <script>
-      // Detectar si es dispositivo móvil
-      const isMobile = /Android|iPhone|iPad|iPod|Opera Mini|IEMobile|Mobile/i.test(navigator.userAgent);
+    <script> 
+// Función para generar bolas de bingo de forma aleatoria
+function generateBingoBalls(numberOfBalls) {
+    const ballsContainer = document.querySelector('.balls-container');
     
-      if (!isMobile) {
-        // BLOQUEOS EN COMPUTADORA
-    
-        // Desactiva clic derecho
-        document.addEventListener("contextmenu", e => e.preventDefault());
-    
-        // Bloquea combinaciones de teclas comunes
-        document.addEventListener("keydown", function (e) {
-          if (
-            e.key === "F12" ||
-            (e.ctrlKey && e.shiftKey && ["I", "J", "C", "M"].includes(e.key.toUpperCase())) ||
-            (e.ctrlKey && ["U", "S"].includes(e.key.toUpperCase()))
-          ) {
-            e.preventDefault();
-          }
-        });
-    
-       
-        // Bloquea arrastrar cosas al navegador
-        window.addEventListener("dragstart", e => e.preventDefault());
-    
-        // Bloquea atajos con mouse + teclado (como Ctrl+clic)
-        document.addEventListener("mousedown", function (e) {
-          if (e.ctrlKey) e.preventDefault();
-        });
-    
-        // BLOQUEO DE CONSOLA — Anti hackers que abren herramientas
-        Object.defineProperty(window, "console", {
-          value: {},
-          writable: false,
-          configurable: false
-        });
-        console.log = () => {};
-        console.warn = () => {};
-        console.error = () => {};
-      }
-    
-      // En móviles: se permite copiar, pegar, etc.
-    
-      // Protección contra anuncios y scripts maliciosos
-      (function () {
-        // Elimina elementos sospechosos como iframes, embeds, etc.
-        const tagsToRemove = ['iframe', 'object', 'embed'];
-        tagsToRemove.forEach(tag => {
-          document.querySelectorAll(tag).forEach(el => el.remove());
-        });
-    
-        // Bloquea popups
-        window.open = function () {
-          alert("Se bloqueó una ventana emergente sospechosa.");
-        };
-    
-        // Filtro de enlaces maliciosos
-        const blockedDomains = ['ads.google.com', 'doubleclick.net', 'popads.net', 'example.com'];
-        const links = document.querySelectorAll('a');
-        links.forEach(link => {
-          const href = link.getAttribute('href') || '';
-          if (blockedDomains.some(domain => href.includes(domain))) {
-            link.style.display = 'none';
-          }
-        });
-      })();
+    for (let i = 0; i < numberOfBalls; i++) {    
+        const ball = document.createElement('div');
+        ball.classList.add('ball');
+        
+        // Genera un número aleatorio entre 1 y 75 (como en el bingo)
+        const ballNumber = Math.floor(Math.random() * 75) + 1;
+        
+        // Determinar la letra de la bola según el número (B: 1-15, I: 16-30, N: 31-45, G: 46-60, O: 61-75)
+        let ballLetter = '';
+        if (ballNumber >= 1 && ballNumber <= 15) {
+            ballLetter = 'B';
+        } else if (ballNumber >= 16 && ballNumber <= 30) {
+            ballLetter = 'I';
+        } else if (ballNumber >= 31 && ballNumber <= 45) {
+            ballLetter = 'N';
+        } else if (ballNumber >= 46 && ballNumber <= 60) {
+            ballLetter = 'G';
+        } else if (ballNumber >= 61 && ballNumber <= 75) {
+            ballLetter = 'O';
+        }
+        
+        // Posicionar la bola aleatoriamente dentro del contenedor
+        const randomX = Math.random() * 100; // Porcentaje de la pantalla en el eje X
+        const randomY = Math.random() * 100; // Porcentaje de la pantalla en el eje Y
+        
+        ball.style.left = `${randomX}vw`;  // Posición horizontal
+        ball.style.top = `${randomY}vh`;   // Posición vertical
+        
+        // Crear el círculo interior blanco con el número
+        const innerCircle = document.createElement('div');
+        innerCircle.classList.add('ball-inner');
+        
+        // Crear la letra en la parte superior de la bola
+        const ballLetterElement = document.createElement('div');
+        ballLetterElement.classList.add('ball-letter');
+        ballLetterElement.textContent = ballLetter;
+        
+        // Crear el número en el centro de la bola
+        const ballNumberElement = document.createElement('div');
+        ballNumberElement.textContent = ballNumber;
+        
+        // Agregar la letra y el número dentro de la bola
+        innerCircle.appendChild(ballLetterElement);
+        innerCircle.appendChild(ballNumberElement);
+        
+        // Agregar el círculo blanco dentro de la bola
+        ball.appendChild(innerCircle);
+        
+        // Hacer que la animación sea aleatoria para cada bola
+        const randomDuration = Math.random() * 5 + 5; // Duración aleatoria de la animación
+        const randomDelay = Math.random() * 2; // Retraso aleatorio
+        ball.style.animationDuration = randomDuration + 's';
+        ball.style.animationDelay = randomDelay + 's';
+
+        // Agregar la bola al contenedor
+        ballsContainer.appendChild(ball);
+    }
+}
+
+// Generar 30 bolas
+generateBingoBalls(30); 
     </script>
-    
+   <script>
+    // Bloquear clic derecho
+    document.addEventListener('contextmenu', function (e) {
+      e.preventDefault();
+    });
+  
+    // Detectar teclas comunes para abrir DevTools
+    document.addEventListener('keydown', function (e) {
+      // F12
+      if (e.key === 'F12') {
+        e.preventDefault();
+      }
+      // Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+U, Ctrl+S
+      if ((e.ctrlKey && e.shiftKey && ['I', 'J'].includes(e.key)) ||
+          (e.ctrlKey && ['U', 'S'].includes(e.key))) {
+        e.preventDefault();
+      }
+    });
+  
+    // Detectar si DevTools está abierto (básico)
+    setInterval(function () {
+      const before = new Date().getTime();
+      debugger;
+      const after = new Date().getTime();
+      if (after - before > 100) {
+        alert('Por favor, no intentes inspeccionar el sitio.');
+        window.location.href = 'about:blank';
+      }
+    }, 2000);
+  </script>
+
+
 </body>
 </html>
+
 
 
