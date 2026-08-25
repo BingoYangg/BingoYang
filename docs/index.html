@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🎱Bingo Yang🎱</title>
+    <title>🎱Bingo Yang Casino🎱</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <style>
@@ -450,19 +450,19 @@
         </div>
     </div>
     <div class="logo-container">
-        <img id="logo" src="images/logoO.png" alt="Bingo Yang Casino Logo" />
+        <img id="logo" src="images/logo.png" alt="Bingo Yang Casino Logo" />
     </div>
-    <h1>🎱BINGO YANG🎱</h1>
+    <h1>BINGO YANG CASINO🎱</h1>
     <div class="payment-info" id="payment-info">
         Datos de Pago Móvil Oficiales:<br>
-        🎱Bingo Yang🎱<br>
+        🎱Bingo Yang Casino🎱<br>
         Cédula:26483716<br>
         Banco:Banco de Venezuela (0102)<br>
         Teléfono:04129518554
     </div>
     <div class="whatsapp-link">
-        <a href="https://chat.whatsapp.com/IIkcJ6uJUmZ352RrNOnI9L?mode=ac_t" target="_blank" class="whatsapp-icon">
-            <img src="logotipo de WhatsApp png.png" alt="WhatsApp">
+        <a href="https://chat.whatsapp.com/DGSWs5emcuGDgRTPETIAoY" target="_blank" class="whatsapp-icon">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/2048px-WhatsApp.svg.png" alt="WhatsApp">
         </a>
         <p>Grupo de WhatsApp, Haz clic en el ícono</p>
         <button onclick="window.location.href='usuarios.html'">Usuarios</button>
@@ -560,16 +560,16 @@
     <div class="money-system" id="money-system-bingo-75">
         <label for="money-amount-bingo-75">BS:</label>
         <select id="money-amount-bingo-75" onchange="appFunctions.togglePaymentReference('bingo-75')">
-            <option value="30">500BS</option>
-            <option value="40">600BS</option>
-            <option value="50">700BS</option>
-            <option value="60">800BS</option>
-            <option value="70">900BS</option>
-            <option value="80">1000BS</option>
-            <option value="90">1200BS</option>
-            <option value="100">1300BS</option>
-            <option value="110">1400BS</option>
-            <option value="120">1500BS</option>
+            <option value="30">30BS</option>
+            <option value="40">40BS</option>
+            <option value="50">50BS</option>
+            <option value="60">60BS</option>
+            <option value="70">70BS</option>
+            <option value="80">80BS</option>
+            <option value="90">90BS</option>
+            <option value="100">100BS</option>
+            <option value="110">110BS</option>
+            <option value="120">120BS</option>
         </select>
         <span id="total-money-bingo-75" class="hidden-money" data-money="0">BS: ****</span>
     </div>
@@ -695,16 +695,16 @@
     <div class="money-system" id="money-system-bingo-90">
         <label for="money-amount-bingo-90">BS:</label>
         <select id="money-amount-bingo-90" onchange="appFunctions.togglePaymentReference('bingo-90')">
-            <option value="30">500BS</option>
-            <option value="40">600BS</option>
-            <option value="50">700BS</option>
-            <option value="60">800BS</option>
-            <option value="70">900BS</option>
-            <option value="80">1000BS</option>
-            <option value="90">1200BS</option>
-            <option value="100">1300BS</option>
-            <option value="110">1400BS</option>
-            <option value="120">1500BS</option>
+            <option value="30">30BS</option>
+            <option value="40">40BS</option>
+            <option value="50">50BS</option>
+            <option value="60">60BS</option>
+            <option value="70">70BS</option>
+            <option value="80">80BS</option>
+            <option value="90">90BS</option>
+            <option value="100">100BS</option>
+            <option value="110">110BS</option>
+            <option value="120">120BS</option>
         </select>
         <span id="total-money-bingo-90" class="hidden-money" data-money="0">BS: ****</span>
     </div>
@@ -849,7 +849,7 @@
         <div class="icon-container">
             <img src="images/juegogame.png" alt="Autoprohibición al Juego" class="icon">
         </div>
-        <p>&copy; Empresa Yang Diversión, Extensión Bingo Yang, Todos los derechos reservados.</p>
+        <p>&copy; Empresa Yang Diversión Casino, Extensión Bingo Yang Casino, Todos los derechos reservados.</p>
         <p>PROHIBIDO MENORES DE 🔞</p>
     </footer>
     <div id="total-cartons-sold">Total de cartones vendidos: 0</div>
@@ -933,40 +933,41 @@ function generateBingoBalls(numberOfBalls) {
 }
 
 // Generar 30 bolas
-generateBingoBalls(30); 
+generateBingoBalls(30);
+
+        
     </script>
-   <script>
-    // Bloquear clic derecho
-    document.addEventListener('contextmenu', function (e) {
-      e.preventDefault();
-    });
-  
-    // Detectar teclas comunes para abrir DevTools
-    document.addEventListener('keydown', function (e) {
-      // F12
-      if (e.key === 'F12') {
-        e.preventDefault();
-      }
-      // Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+U, Ctrl+S
-      if ((e.ctrlKey && e.shiftKey && ['I', 'J'].includes(e.key)) ||
-          (e.ctrlKey && ['U', 'S'].includes(e.key))) {
-        e.preventDefault();
-      }
-    });
-  
-    // Detectar si DevTools está abierto (básico)
-    setInterval(function () {
-      const before = new Date().getTime();
-      debugger;
-      const after = new Date().getTime();
-      if (after - before > 100) {
-        alert('Por favor, no intentes inspeccionar el sitio.');
-        window.location.href = 'about:blank';
-      }
-    }, 2000);
-  </script>
-
-
+    <script>
+        // Bloquear clic derecho
+        document.addEventListener('contextmenu', function (e) {
+          e.preventDefault();
+        });
+      
+        // Detectar teclas comunes para abrir DevTools
+        document.addEventListener('keydown', function (e) {
+          // F12
+          if (e.key === 'F12') {
+            e.preventDefault();
+          }
+          // Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+U, Ctrl+S
+          if ((e.ctrlKey && e.shiftKey && ['I', 'J'].includes(e.key)) ||
+              (e.ctrlKey && ['U', 'S'].includes(e.key))) {
+            e.preventDefault();
+          }
+        });
+      
+        // Detectar si DevTools está abierto (básico)
+        setInterval(function () {
+          const before = new Date().getTime();
+          debugger;
+          const after = new Date().getTime();
+          if (after - before > 100) {
+            alert('Por favor, no intentes inspeccionar el sitio.');
+            window.location.href = 'about:blank';
+          }
+        }, 2000);
+      </script>
+    
 </body>
 </html>
 
