@@ -1125,7 +1125,7 @@ window.onload = function() {
     // Obtener la clave principal desde Realtime Database y mantenerla actualizada
     const claveRefPrincipal = ref(database, 'config/clavePrincipal');
     onValue(claveRefPrincipal, (snapshot) => {
-        codigoAccesoCorrecto = snapshot.val() || "YANG$$"; // Valor por defecto
+        codigoAccesoCorrecto = snapshot.val() || "                                      "; // Valor por defecto
     });
 
     // Llamar a la función updateTotalMoney al cargar la página
